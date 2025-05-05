@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const PortfolioSection = styled.section`
   padding: 5rem 2rem;
@@ -50,7 +51,7 @@ function Portfolio() {
           >
             <h3>{project.title}</h3>
             <p>{project.desc}</p>
-            <a href="#" style={{ color: '#191A1AFF' }}>Voir le projet</a>
+            <Link to="#" smooth={true} duration={500} style={{ color: '#191A1AFF' }}>Voir le proje</Link>
           </PortfolioCard>
         ))}
       </PortfolioGrid>

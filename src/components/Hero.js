@@ -110,7 +110,7 @@ function Hero() {
 
     const timeout = setTimeout(typeOrDelete, isTyping ? 200 : 150);
     return () => clearTimeout(timeout);
-  }, [currentGreetingIndex, isTyping]);
+  }, [currentGreetingIndex, isTyping,greetings]);
 
   return (
     <HeroSection>
